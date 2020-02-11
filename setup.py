@@ -17,7 +17,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="gemstool",
-    version="0.0.2",
+    version="0.0.2.1",
     author="Hao Luo",
     author_email="bioluohao@outlook.com",
     description="some small tools for my modeling work",

@@ -8,8 +8,7 @@ import os
 import pandas as pd
 import re
 import imp
-import My_def
-
+import gemstool
 def gpr2log( gpr_i, othergeneset,inset = True, notinset = False, emptyset = '' ):
     torf = ''
     if  not gpr_i :
@@ -200,7 +199,7 @@ def merge_reactionsid(model1, new_id, old_id):
         rea1 = model.reactions.get_by_id(new_id)
         rea2 = model.reactions.get_by_id(old_id)
 
-        rea1.gene_reaction_rule = My_def.merge_model.merge_gprule(rea1.gene_reaction_rule, rea2.gene_reaction_rule)
+        rea1.gene_reaction_rule = gemstool.merge_model.merge_gprule(rea1.gene_reaction_rule, rea2.gene_reaction_rule)
         try:
             rea1.notes['from'] = list(set(rea1.notes['from']+rea2.notes['from']))
         except:
