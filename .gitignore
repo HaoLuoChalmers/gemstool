@@ -94,7 +94,7 @@ ipython_config.py
 #Pipfile.lock
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
-#__pypackages__/
+__pypackages__/
 
 # Celery stuff
 celerybeat-schedule
@@ -132,5 +132,5 @@ dmypy.json
 
 #.gitignore
 .idea/
-gemstool/
+#gemstool/
 #setup.py
